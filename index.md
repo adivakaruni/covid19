@@ -1,4 +1,4 @@
-How does a pandemic spread across geographic regions? I apply spatial diffusion SIR models to show how travelers might contribute to spreading a pandemic very quickly over a large population. Simulations shown here demonstrate how flight connections between US cities have contributed to the spread of Coronavirus (formally referred to as COVID-19). 
+How does a pandemic spread across geographic regions? I apply spatial diffusion SIR models to show how air travel might contribute to the rapid spread of a pandemic over a large population. Simulations shown here demonstrate how flight connections between US cities have contributed to the spread of Coronavirus (formally referred to as COVID-19). 
 
 More detailed description and analysis to follow shortly. 
 
