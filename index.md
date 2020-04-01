@@ -1,5 +1,7 @@
 How does a pandemic spread across geographic regions? I apply spatial diffusion SIR models to show how air travel might contribute to the rapid spread of a pandemic over a large population. Simulations shown here demonstrate how flight connections between US cities could have led to the spread of Coronavirus (COVID-19) across US counties. 
 
+Preliminary estimates show that over 40% of the US population might have been infected when there are no restrictions on air travel. 
+
 More detailed description and analysis to follow shortly. 
 
 <!--<a href="url"><img src="https://user-images.githubusercontent.com/26789228/78155263-84ea5c00-743d-11ea-833c-e0a7de80f3a6.gif" align="left" height="370" width="1233"></a> --> 
