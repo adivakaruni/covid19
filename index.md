@@ -2,4 +2,4 @@ How does a pandemic spread across geographic regions? I apply spatial diffusion 
 
 More detailed description and analysis to follow shortly. 
 
-<a href="url"><img src="https://user-images.githubusercontent.com/26789228/78155263-84ea5c00-743d-11ea-833c-e0a7de80f3a6.gif" align="left" height="380" width="1266"></a> 
+<a href="url"><img src="https://user-images.githubusercontent.com/26789228/78155263-84ea5c00-743d-11ea-833c-e0a7de80f3a6.gif" align="left" height="390" width="1300"></a> 
