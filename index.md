@@ -1,37 +1,5 @@
-## Welcome to GitHub Pages
+How does a pandemic spread across geographic regions? I apply spatial diffusion SIR models to show how travelers might contribute to spreading a pandemic very quickly over a large population. Simulations shown here demonstrate how flight connections between US cities have contributed to the spread of Coronavirus (formally referred to as COVID-19). 
 
-You can use the [editor on GitHub](https://github.com/thedeepguru/COVID19/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+More detailed description and analysis to follow shortly. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thedeepguru/COVID19/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<a href="url"><img src="https://user-images.githubusercontent.com/26789228/78155263-84ea5c00-743d-11ea-833c-e0a7de80f3a6.gif" align="left" height="192" width="640"></a> 
