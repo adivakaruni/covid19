@@ -9,71 +9,76 @@
   <link rel="stylesheet" href="./basic.css">
 </head>
 <body>
-<b>Abstract</b>
-  <p>To do</p>
-<b>Introduction</b>
-  <p>
-  The world is waging an uphill battle to contain the Coronavirus (COVID-19) pandemic. With no cure in sight and the rapid surge of infections worldwide, governments have had no choice but to impose unprecedented restrictions on social contact and economic activity. Although COVID-19 originated in December 2019 in Wuhan, China, data from various sources show that the disease has spread rapidly to over 184 countries and regions in just under four months (ref:JHU). Among these, the United States (US) has been the worst affected with over 400,000 cases and 13,000 deaths at the time of writing. While this in itself is alarming, the rapidness with which the pandemic spread throughout the US is even more striking. There were just 7 confirmed cases across 6 US counties by end January, with most having travelled to China recently. February also saw just 70 new cases across 22 counties, raising hopes that the US might have evaded the pandemic. These hopes were dashed in the coming weeks as over 188,000 new cases were reported across 2,154 counties in March 2020.
+<article>
+  <h3>
+    Mayday On Ground: Did Air Travel Help Spread Coronavirus?
+  </h3>
+  <!--<b>Abstract</b>
+    <p>To do</p> -->
+  <b>Introduction</b>
+    <p>
+    The world is waging an uphill battle to contain the Coronavirus (COVID-19) pandemic. With no cure in sight and the rapid surge of infections worldwide, governments have had no choice but to impose unprecedented restrictions on social contact and economic activity. Although COVID-19 originated in December 2019 in Wuhan, China, data from various sources show that the disease has spread rapidly to over 184 countries and regions in just under four months (ref:JHU). Among these, the United States (US) has been the worst affected with over 400,000 cases and 13,000 deaths at the time of writing. While this in itself is alarming, the rapidness with which the pandemic spread throughout the US is even more striking. There were just 7 confirmed cases across 6 US counties by end January, with most having travelled to China recently. February also saw just 70 new cases across 22 counties, raising hopes that the US might have evaded the pandemic. These hopes were dashed in the coming weeks as over 188,000 new cases were reported across 2,154 counties in March 2020.
+    </p>
+    <p>
+    How did COVID-19 spread so quickly within the US? What factors have led to its rapid spread across the country? In this article, I explore whether air travel might have contributed to the pandemic becoming a major threat due to small world network effects. The massive growth in air travel in recent decades means that an infectious disease like COVID-19 can spread very quickly between regions. This can be further aggravated by urbanisation, with densely populated areas such as cities experiencing high rates of infection and also becoming major transmission nodes in the disease diffusion network. Such rapid transmission was detected during the severe acute respiratory syndrome (SARS) outbreak of 2003, which began in Hong Kong and then spread rapidly as infected persons travelled to other countries (ref: Hollingsworth et al., 2003).
+    </p>
+
+  <b>Air travel in the United States</b>
+    <p>
+    The United States boasts an extensive air transportation network. According to 2019 data from the Bureau of Transportation Statistics (BTS), there were 1,272 airports with scheduled passenger services, of which 37 airports handled over 10 million passengers annually. In addition, the 50 busiest airports handled 82% of all traffic in the country. Due to increased competition, air travel is now more affordable and is the preferred means of transportation, especially for domestic destinations (ref: https://www.forbes.com/sites/greatspeculations/2016/10/11/the-state-of-air-travel-in-the-u-s-has-changed-over-the-years/#36122d9e29b6). Figure 1 shows the connectivity between various airports in 2019.
+
+    <figure align="center">
+      <img src="./images/USFlights_2019.png" align="center" width="40%"/>
+      <figcaption>Figure 1: Air transportation network in the United States. Red nodes denote airports and blue edges represent connectivity between airport pairs. <br>
+        Edge thickness represents the aggregated traffic between origin and destination airports. <i>Source: Bureau of Transportation Statistics (2019).</i></figcaption>
+    </figure>
+
+    <p>
+    Figure 1 shows there is high connectivity between major cities and hubs (e.g. New York–Chicago) that require short flights lasting between 30 minutes and 2 hours. There is also considerable travel between regions much further away from each other (e.g. New York–Los Angeles) requiring longer flights of up to 6 hours. Clearly, distance does not seem to be a problem as flying has become more cheap and frequent. Figure 2 plots the density of incoming air travellers per county based on 2019 BTS data. While major urban hubs clearly lead the pack, Figure 2 shows that other counties (including rural ones) also experience a large share of passenger inflows. These patterns highlight two important aspects: (i) Counties that are large population centers naturally attract more travelers, (ii) There is a high level of spatial mobility across US counties.
+    </p>
+
+    <figure align="center">
+      <img src="./images/USIncomingPassengersByCounty_2019.png" align="center" width="40%"/>
+      <figcaption>Figure 2: Share of incoming air passengers by county in 2019. <i>Source: Bureau of Transportation Statistics (2019).</i></figcaption>
+    </figure>
+
+    <p>
+    These high levels of connectivity indicate greater mobility among people, and has been shown to directly affect urbanisation and economc activity (GDP). However, connectivity becomes a huge problem in the event of a pandemic. Places visited more frequently will experience more introductions of the infection, especially if incoming passengers are not screened thoroughly at airports for the associated symptoms. Infected travelers will then unknowingly infect others through people-to-people transmission, causing a greater spatial spread of the pathogen. Despite this important connection between air travel and infectious disease spread, it has been overlooked by most epidemiological studies to date.
+    </p>
+
+    <p style="color:red">
+    With no effective treatment available as of yet, extensive research is underway to determine how the disease spreads, steps that can mitigate its progress, and the economic costs of mitigation. As part of these efforts, researchers and public health experts are relying mostly on SIR models to assess the effectiveness of various mitigation measures and guide policy decisions (ref: Atkeson, 2020). However, there is still no consensus on key epidemiological parameters such as the "basic reproduction number" (denoted R<sub>0</sub>) (the expected number of people infected by an ill person) that form the basis of these models.
+    </p>
+
   </p>
   <p>
-  How did COVID-19 spread so quickly within the US? What factors have led to its rapid spread across the country? In this article, I explore whether air travel might have contributed to the pandemic becoming a major threat due to small world network effects. The massive growth in air travel in recent decades means that an infectious disease like COVID-19 can spread very quickly between regions. This can be further aggravated by urbanisation, with densely populated areas such as cities experiencing high rates of infection and also becoming major transmission nodes in the disease diffusion network. Such rapid transmission was detected during the severe acute respiratory syndrome (SARS) outbreak of 2003, which began in Hong Kong and then spread rapidly as infected persons travelled to other countries (ref: Hollingsworth et al., 2003).
+  How does a pandemic spread across geographic regions? I apply spatial diffusion SIR models to show how air travel might contribute to the rapid spread of a pandemic over a large population. Simulations shown here demonstrate how flight connections between US cities could have led to the spread of Coronavirus (COVID-19) across US counties.
+
+  Preliminary estimates show that over 40% of the US population might have been infected when there are no restrictions on air travel.
+
+  More detailed description and analysis to follow shortly.
+
+  <!--<a href="url"><img src="https://user-images.githubusercontent.com/26789228/78155263-84ea5c00-743d-11ea-833c-e0a7de80f3a6.gif" align="left" height="370" width="1233"></a> -->
+
+  <a href="url"><img src="https://user-images.githubusercontent.com/26789228/78159434-dcd79180-7442-11ea-8f02-d57f4f1ff27e.gif" align="center" width="50%"/>
+
+  <a href="url"><img src="https://user-images.githubusercontent.com/26789228/78159648-21fbc380-7443-11ea-9b22-93b3ad30d949.gif" align="center" width="50%"/>
   </p>
 
-<b>Air travel in the United States</b>
-  <p>
-  The United States boasts an extensive air transportation network. According to 2019 data from the Bureau of Transportation Statistics (BTS), there were 1,272 airports with scheduled passenger services, of which 37 airports handled over 10 million passengers annually. In addition, the 50 busiest airports handled 82% of all traffic in the country. Due to increased competition, air travel is now more affordable and is the preferred means of transportation, especially for domestic destinations (ref: https://www.forbes.com/sites/greatspeculations/2016/10/11/the-state-of-air-travel-in-the-u-s-has-changed-over-the-years/#36122d9e29b6). Figure 1 shows the connectivity between various airports in 2019.
 
-  <figure align="center">
-    <img src="./images/USFlights_2019.png" align="center" width="40%"/>
-    <figcaption>Figure 1: Air transportation network in the United States. Red nodes denote airports and blue edges represent connectivity between airport pairs. <br>
-      Edge thickness represents the aggregated traffic between origin and destination airports. <i>Source: Bureau of Transportation Statistics (2019).</i></figcaption>
-  </figure>
+  <!--
+  The ensuing panic has forced governments to take unprecented steps to prevent the disease from spreading, such as mandatory social distancing, travel curbs, and closure of non-essential businesses. These measures have pretty much shut down the entire world economy, led to widespread unemployment, and sent shock waves across financial markets.
 
-  <p>
-  Figure 1 shows there is high connectivity between major cities and hubs (e.g. New York–Chicago) that require short flights lasting between 30 minutes and 2 hours. There is also considerable travel between regions much further away from each other (e.g. New York–Los Angeles) requiring longer flights of up to 6 hours. Clearly, distance does not seem to be a problem as flying has become more cheap and frequent. Figure 2 plots the density of incoming air travellers per county based on 2019 BTS data. While major urban hubs clearly lead the pack, Figure 2 shows that other counties (including rural ones) also experience a large share of passenger inflows. These patterns highlight two important aspects: (i) Counties that are large population centers naturally attract more travelers, (ii) There is a high level of spatial mobility across US counties.
-  </p>
+    <b>References</b>
 
-  <figure align="center">
-    <img src="./images/USIncomingPassengersByCounty_2019.png" align="center" width="40%"/>
-    <figcaption>Figure 2: Share of incoming air passengers by county in 2019. <i>Source: Bureau of Transportation Statistics (2019).</i></figcaption>
-  </figure>
+    1. Atkeson (2020) - Economists are not fully familiar with the quantitative implications of these models and thus are not fully engaged in the policy discussion regarding the tradeo between the public health and economic implications of these mitigation and social distancing measures.
 
-  <p>
-  These high levels of connectivity indicate greater mobility among people, and has been shown to directly affect urbanisation and economc activity (GDP). However, connectivity becomes a huge problem in the event of a pandemic. Places visited more frequently will experience more introductions of the infection, especially if incoming passengers are not screened thoroughly at airports for the associated symptoms. Infected travelers will then unknowingly infect others through people-to-people transmission, causing a greater spatial spread of the pathogen. Despite this important connection between air travel and infectious disease spread, it has been overlooked by most epidemiological studies to date.
-  </p>
+    2. https://www.thinkglobalhealth.org/article/updated-timeline-coronavirus
 
-  <p style="color:red">
-  With no effective treatment available as of yet, extensive research is underway to determine how the disease spreads, steps that can mitigate its progress, and the economic costs of mitigation. As part of these efforts, researchers and public health experts are relying mostly on SIR models to assess the effectiveness of various mitigation measures and guide policy decisions (ref: Atkeson, 2020). However, there is still no consensus on key epidemiological parameters such as the "basic reproduction number" (denoted R<sub>0</sub>) (the expected number of people infected by an ill person) that form the basis of these models.
-  </p>
-
-</p>
-<p>
-How does a pandemic spread across geographic regions? I apply spatial diffusion SIR models to show how air travel might contribute to the rapid spread of a pandemic over a large population. Simulations shown here demonstrate how flight connections between US cities could have led to the spread of Coronavirus (COVID-19) across US counties.
-
-Preliminary estimates show that over 40% of the US population might have been infected when there are no restrictions on air travel.
-
-More detailed description and analysis to follow shortly.
-
-<!--<a href="url"><img src="https://user-images.githubusercontent.com/26789228/78155263-84ea5c00-743d-11ea-833c-e0a7de80f3a6.gif" align="left" height="370" width="1233"></a> -->
-
-<a href="url"><img src="https://user-images.githubusercontent.com/26789228/78159434-dcd79180-7442-11ea-8f02-d57f4f1ff27e.gif" align="center" width="50%"/>
-
-<a href="url"><img src="https://user-images.githubusercontent.com/26789228/78159648-21fbc380-7443-11ea-9b22-93b3ad30d949.gif" align="center" width="50%"/>
-</p>
-
-
-<!--
-The ensuing panic has forced governments to take unprecented steps to prevent the disease from spreading, such as mandatory social distancing, travel curbs, and closure of non-essential businesses. These measures have pretty much shut down the entire world economy, led to widespread unemployment, and sent shock waves across financial markets.
-
-  <b>References</b>
-
-  1. Atkeson (2020) - Economists are not fully familiar with the quantitative implications of these models and thus are not fully engaged in the policy discussion regarding the tradeo between the public health and economic implications of these mitigation and social distancing measures.
-
-  2. https://www.thinkglobalhealth.org/article/updated-timeline-coronavirus
-
-    remote_theme: niklasbuschmann/contrast@v2.8
-    plugins:
-      - jekyll-remote-theme
--->
+      remote_theme: niklasbuschmann/contrast@v2.8
+      plugins:
+        - jekyll-remote-theme
+  -->
+</article> 
 </body>
 </html>
