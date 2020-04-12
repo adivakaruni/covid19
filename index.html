@@ -312,7 +312,7 @@
   $$ h(t,j) = \frac{\beta S_{j,t} (1-\exp(-\sum_{k} m_{j,k}^t x_{k,t} y_{j,t}))}{1 + \beta {y_{j,t}}} \tag{1} $$
 
   where $\beta$ is the disease's transmission rate; $S_{j,t}$ is the proportion of population in county $j$ at time $t$ that is susceptible; $m_{j,k}^t$ denotes mobility from county $k$ to county $j$; $x_{k,t}$ and $y_{j,t}$ represent the proportion of infected and susceptible populations on day $t$ at counties $k$ and $j$, respectively, and can be estimated as
-  $x_{k,t} = \frac{I_{k,t}}{N_k}$ and $y_{j,t} = \frac{S_{j,t}}{N_j}$ ($N_k$ and $N_j$ are the total populations (normalized) at counties $k$ and $j$, respectively). The transmission rate $\beta$ of the COVID-19 pathogen, and is assumed to not vary spatially. I then simulate the stochastic process of the disease being introduced into counties as a Bernoulli random variable $ I_{j, t+1} \sim Binom(h(t, j)) $ for $ I_t = 0 $. (<i>Note: In unreported simulations, I use a more deterministic approach and introduce the disease initially into the 6 counties that actually reported COVID-19 cases in January 2020. The results are stikingly similar to the simulations presented below.</i>)
+  $x_{k,t} = \frac{I_{k,t}}{N_k}$ and $y_{j,t} = \frac{S_{j,t}}{N_j}$ ($N_k$ and $N_j$ are the total populations (normalized) at counties $k$ and $j$, respectively). The transmission rate $\beta$ of the COVID-19 pathogen, and is assumed to not vary spatially. I then simulate the stochastic process of the disease being introduced into counties as a Bernoulli random variable $ I_{j, t+1} \sim Binom(h(t, j)) $ for $ I_t = 0 $. (<i>Note: In unreported simulations, I use a more deterministic approach and introduce the disease initially into the 6 counties that actually reported COVID-19 cases in January 2020. The results are strikingly similar to the simulations presented below.</i>)
   <br><br>
 
   Upon being introduced into initial counties, the virus is transmitted by infected individuals travelling to other locations. The mechanism through which the disease is carried can be proxied using an inflow-outflow (IO) matrix of the number of passengers travelling by air between counties.
@@ -345,7 +345,7 @@
   </ol>
 
   <h2 class="counter-skip">
-    Simulations: Spread of COVID-19 among the US populaton
+    Simulations: Spread of COVID-19 
   </h2>
 
   The first set of simulations considers the scenario where there are no mandatory social restrictions in place and that people who prefer to travel will continue to do so (i.e., $\alpha = 1$). In the second set of simulations, I assess the impact of a drop in flight connectivity due to the imposition of social restrictions at various counties (i.e., $\alpha = 0.5$). Data on SAH and SIP orders issued by individual states and counties was obtained from the <a href="https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html">New York Times</a>.
